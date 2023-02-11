@@ -28,7 +28,9 @@ struct ContentView: View {
                     HStack(spacing: 40) {
                         Image(systemName: "heart.circle").resizable().aspectRatio(contentMode: .fit)
                         
-                        Image(systemName: "network").resizable().aspectRatio(contentMode: .fit)
+                        Image(systemName: "network").resizable().aspectRatio(contentMode: .fit).onTapGesture {
+                            UIApplication.shared.open(URL(string: "https://github.com/mohammedmubashir007")!)
+                        }
                         
                         Image(systemName: "message.circle").resizable().aspectRatio(contentMode: .fit)
                         
